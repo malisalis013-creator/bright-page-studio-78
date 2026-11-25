@@ -9,10 +9,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Loeurn Sreymai — Aspiring Web Developer Portfolio" },
+      { title: "Alex Vadruis — Aspiring Web Developer Portfolio" },
       { name: "description", content: "Web Programming student at Passerelles numériques Cambodia building modern, user-friendly websites." },
-      { property: "og:title", content: "Loeurn Sreymai — Aspiring Web Developer" },
-      { property: "og:description", content: "Projects, skills and contact for Loeurn Sreymai, PNC Web Programming Gen 2027." },
+      { property: "og:title", content: "Alex Vadruis — Aspiring Web Developer" },
+      { property: "og:description", content: "Projects, skills and contact for Alex Vadruis, PNC Web Programming Gen 2027." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -22,8 +22,8 @@ export const Route = createFileRoute("/")({
 
 /* ---------- Editable content: change values here ---------- */
 const PROFILE = {
-  name: "LOEURN SREYMAI",
-  email: "sreymai.loeurn@example.com", // TODO: replace with real email
+  name: "Alex Vadruis",
+  email: "alex.vadruis@example.com", // TODO: replace with real email
   github: "https://github.com/", // TODO
   linkedin: "https://www.linkedin.com/", // TODO
   cv: "#", // TODO: link to your CV PDF
@@ -111,7 +111,7 @@ function Portfolio() {
       {/* Header */}
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-lg">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-          <a href="#home" className="font-display text-lg font-bold"><span className="text-brand">LS</span>.dev</a>
+          <a href="#home" className="font-display text-lg font-bold"><span className="text-brand">AV</span>.dev</a>
           <ul className="hidden items-center gap-1 lg:flex">
             {NAV.map((id) => (
               <li key={id}>
@@ -160,9 +160,9 @@ function Portfolio() {
             </div>
             <div className="reveal mx-auto">
               <div className="relative rounded-full bg-brand p-1.5 shadow-glow">
-                {/* Replace with <img src="your-photo.jpg" alt="Portrait of Loeurn Sreymai" /> */}
+                {/* Replace with <img src="your-photo.jpg" alt="Portrait of Alex Vadruis" /> */}
                 <div role="img" aria-label="Profile photo placeholder" className="grid h-60 w-60 place-items-center rounded-full bg-card font-display text-6xl font-extrabold sm:h-72 sm:w-72">
-                  <span className="text-brand">LS</span>
+                  <span className="text-brand">AV</span>
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@ function Portfolio() {
         <Section id="about" eyebrow="About Me" title="Learning to build the web, one project at a time">
           <div className="grid gap-6 md:grid-cols-2">
             <div className="reveal space-y-4 text-muted-foreground">
-              <p>I'm Loeurn Sreymai, a Web Programming student at Passerelles numériques Cambodia (PNC), Generation 2027. I love turning ideas into clean, responsive interfaces and learning how great products are built.</p>
+              <p>I'm Alex Vadruis, a Web Programming student at Passerelles numériques Cambodia (PNC), Generation 2027. I love turning ideas into clean, responsive interfaces and learning how great products are built.</p>
               <p>My goal is to become a professional Web Developer who creates modern, useful and user-friendly websites and web applications that make a real difference for people.</p>
             </div>
             <div className="reveal grid gap-4 sm:grid-cols-2">
@@ -280,7 +280,7 @@ function Portfolio() {
           </ul>
           <Socials />
         </div>
-        <p className="border-t border-border py-5 text-center text-sm text-muted-foreground">© {new Date().getFullYear()} Loeurn Sreymai. All rights reserved.</p>
+        <p className="border-t border-border py-5 text-center text-sm text-muted-foreground">© {new Date().getFullYear()} Alex Vadruis. All rights reserved.</p>
       </footer>
 
       <a href="#home" aria-label="Back to top" className={`fixed right-5 bottom-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-brand text-primary-foreground shadow-glow transition-all hover:-translate-y-1 ${showTop ? "opacity-100" : "pointer-events-none opacity-0"}`}>
