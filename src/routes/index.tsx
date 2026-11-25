@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import {
-  Moon, Sun, Menu, X, Download, ArrowRight, Github, Linkedin, Mail, ExternalLink,
+  Moon, Sun, Menu, X, Download, ArrowRight, FolderGit2, Briefcase, Mail, ExternalLink,
   GraduationCap, Award, Code2, Palette, Terminal, GitBranch, Smartphone, FileCode,
   MessageCircle, Users, Lightbulb, Clock, BookOpen, ArrowUp, Send, CheckCircle2, AlertCircle,
 } from "lucide-react";
@@ -217,7 +217,7 @@ function Portfolio() {
                   </div>
                   <div className="mt-6 flex gap-3">
                     <Btn href="#" small><ExternalLink size={16} /> Live Demo</Btn>
-                    <Btn href={PROFILE.github} small variant="outline"><Github size={16} /> GitHub</Btn>
+                    <Btn href={PROFILE.github} small variant="outline"><FolderGit2 size={16} /> GitHub</Btn>
                   </div>
                 </div>
               </article>
@@ -260,8 +260,8 @@ function Portfolio() {
             <div className="reveal space-y-4">
               <p className="text-muted-foreground">Open to internships, collaborations and freelance projects. I'd love to hear from you.</p>
               <ContactRow icon={<Mail size={18} />} label="Email" href={`mailto:${PROFILE.email}`} value={PROFILE.email} />
-              <ContactRow icon={<Github size={18} />} label="GitHub" href={PROFILE.github} value="github.com/your-username" />
-              <ContactRow icon={<Linkedin size={18} />} label="LinkedIn" href={PROFILE.linkedin} value="linkedin.com/in/your-profile" />
+              <ContactRow icon={<FolderGit2 size={18} />} label="GitHub" href={PROFILE.github} value="github.com/your-username" />
+              <ContactRow icon={<Briefcase size={18} />} label="LinkedIn" href={PROFILE.linkedin} value="linkedin.com/in/your-profile" />
             </div>
             <ContactForm />
           </div>
@@ -313,8 +313,8 @@ function Btn({ href, children, variant = "solid", small }: { href: string; child
 
 function Socials({ className = "" }: { className?: string }) {
   const items = [
-    { href: PROFILE.github, icon: Github, label: "GitHub" },
-    { href: PROFILE.linkedin, icon: Linkedin, label: "LinkedIn" },
+    { href: PROFILE.github, icon: FolderGit2, label: "GitHub" },
+    { href: PROFILE.linkedin, icon: Briefcase, label: "LinkedIn" },
     { href: `mailto:${PROFILE.email}`, icon: Mail, label: "Email" },
   ];
   return (
