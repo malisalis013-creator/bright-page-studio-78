@@ -1,4 +1,4 @@
 # Roadmap
 
 - [x] Change name to Alex Vadruis across the site
-- [ ] GitHub connection for chat-only use — connect card was cancelled; reopen if user still wants it
+- [x] GitHub connection for chat-only use — connected as "My GitHub API" (account: malisalis013-creator), conversation-only, not linked to the project
