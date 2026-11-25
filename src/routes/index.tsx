@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import profilePhoto from "@/assets/profile-photo.png.asset.json";
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import {
   Moon, Sun, Menu, X, Download, ArrowRight, FolderGit2, Briefcase, Mail, ExternalLink,
@@ -160,10 +161,7 @@ function Portfolio() {
             </div>
             <div className="reveal mx-auto">
               <div className="relative rounded-full bg-brand p-1.5 shadow-glow">
-                {/* Replace with <img src="your-photo.jpg" alt="Portrait of Alex Vadruis" /> */}
-                <div role="img" aria-label="Profile photo placeholder" className="grid h-60 w-60 place-items-center rounded-full bg-card font-display text-6xl font-extrabold sm:h-72 sm:w-72">
-                  <span className="text-brand">AV</span>
-                </div>
+                <img src={profilePhoto.url} alt="Portrait of Alex Vadruis" className="h-60 w-60 rounded-full object-cover sm:h-72 sm:w-72" />
               </div>
             </div>
           </div>
